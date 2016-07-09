@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/index_basic.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+    
+    <!--[if lte IE 6]>
+    <script src="js/dist/html5shiv.min.js"></script>
+    <script src="js/dist/ie9.min.js"></script>
+    <script src="js/dist/PIE.js"></script>
+    <script src="js/dist/responsive.min.js"></script>
+    <![endif]-->
+
+    <!--script-->
+    <script src="js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    
+
+        <script>
+         $(function(){
+            //---------mainmenuhover---
+            
+            var menuBox = $('#gnb'),
+                menuli = $('#gnb>li'),
+                submenu = $('.sub_menu');
+            
+            menuli.on('mouseenter', function(){
+               submenu.addClass('submenusize');
+               menuBox.addClass('back');
+               menuli.css({'border-color':'#1d9433'});
+            });
+            menuli.on('mouseleave', function(){
+               submenu.removeClass('submenusize');
+               menuBox.removeClass('back');
+               menuli.css({'border-color':'#333'});
+            });
+            
+            //---------mainmenuhover---
+            
+         });//jQuery
+   
+    </script>
+   
+    <title>Document</title>
+</head>
+<body>
+        <div id="wrap">
+        <header>
+            <div id="headBox">
+                <h1><a href="index.html"><snap class="me_hidden">logo</snap></a></h1>
+                <ul id="gnb">
+                    <li>
+                       <a href="#">EVENT</a>
+                       <ul class="sub_menu">
+                          <li><a href="#">진행중인 이벤트</a></li>
+                          <li><a href="#">완료된 이벤트</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">PRODUCT</a>
+                       <ul class="sub_menu">
+                          <li><a href="#">이달의 증정할인</a></li>
+                          <li><a href="#">PB상품</a></li>
+                          <li><a href="#">신상품</a></li>
+                          <li><a href="#">쿠폰상품</a></li>
+                          <li><a href="#">할인,멤버십카드</a></li>
+                          <li><a href="#">서비스 안내</a></li>
+                          <li><a href="#">E-CATALOG</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">FRANCHISE</a>
+                       <ul class="sub_menu">
+                          <li><a href="#">가맹가이드</a></li>
+                          <li><a href="#">사업설명회</a></li>
+                          <li><a href="#">가맹 FAQ</a></li>
+                          <li><a href="#">성공스토리</a></li>
+                          <li><a href="#">가맹점포</a></li>
+                          <li><a href="#">가맹상담</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">ABOUT 7-ELEVEN</a>
+                       <ul class="sub_menu">
+                          <li><a href="#">회사소개</a></li>
+                          <li><a href="#">사회공헌</a></li>
+                          <li><a href="#">환경경영</a></li>
+                          <li><a href="#">채용안내</a></li>
+                          <li><a href="#">7-ELEVEN 포스터</a></li>
+                          <li><a href="#">고객의 소리</a></li>
+                          <li><a href="#">공지사항</a></li>
+                          <li><a href="#">7-STORY</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">PARTNER</a>
+                       <ul class="sub_menu">
+                          <li><a href="#">상품입점문의</a></li>
+                          <li><a href="#">동반성장</a></li>
+                       </ul>
+                    </li>
+                </ul>
+                <div id="searchBox"><span class="me_hidden">랄라</span></div>
+            </div><!--// #headBox-->
+            <span class="h_bar"><!--head_bar--></span>
+        </header><!--//    header-->
+        
+        <article>
+            <div id="articleBox">
+                <ul class="title">
+                    <li class="gnb_title">PRODUCT</li>
+                    <li class="sub_map">
+                        <ul>
+                            <li><a href="./index.html">home&gt; </a></li>
+                            <li><a href="#">product&gt; </a></li>
+                            <li><a href="#">이 달의 증정할인 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav_menu">
+                    <li><a href="#">이달의 증정할인</a></li>
+                    <li><a href="#">PB상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">쿠폰상품</a></li>
+                    <li><a href="#">할인,멤버십카드</a></li>
+                    <li><a href="#">서비스안내</a></li>
+                    <li><a href="#">E-CATALOG</a></li>
+                </ul>
+                <div id="content"></div>
+            </div><!--//#articleBox-->
+        </article><!--//    article-->
+        <footer>
+            <div id="footBox">
+                <div id="fInfo">
+                <dl>
+                    <dt>CUSTOM</dt>
+                    <dd><a href="#">고객의소리</a></dd>
+                    <dd><a href="#">채용문의</a></dd>
+                    <dd><a href="#">가맹상담</a></dd>
+                    <dd ><a class="last" href="#">입점문의</a></dd>
+                </dl>
+                
+                <ul>
+                    <li>SITE MAP</li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">롯데멤버스카드</a></li>
+                    <li><a class="last" href="#">롯데올세이프</a></li>
+                </ul>
+                
+                <p>서울특별시 중구 소월로 3 롯데손해보험빌딩 7층 TEL 1577-0711 / FAX 02-2679-6860 <br/><br/>
+                COPYRIGHT LEE HEE AE / CHOI YOUN HYE / HWANG JIN KYOUNG Reserved.</p>
+                </div><!--//    #fInfo-->
+            </div>
+        </footer><!--//    footer-->
+    </div>
+</body>
+</html>

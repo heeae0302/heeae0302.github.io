@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+<!--    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/index_basic.css" />
+    <title>Document</title>
+    <!--[if lte IE 6]>
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/ie9.min.js"></script>
+    <script src="./js/PIE.js"></script>w
+    <script src="./js/responsive.min.js"></script>
+    <![endif]-->
+    
+    <!--jQuery-->
+    <script src="./js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    
+        <script>
+         $(function(){
+            
+            var btnAll = $('.button>li>button'),
+                btn1 = $('.home_btn'),
+                btn2 = $('.evt_btn'),
+                btn3 = $('.pro_btn'),
+                btn4 = $('.do_btn'),
+                banner_ul = $('.banner>ul');
+            
+            btn1.on('click', function(){
+               btnAll.removeClass('color', function(){btn1.addClass('color')});
+               banner_ul.animate({'margin-left':0},700);
+            });
+            
+            btn2.on('click', function(){
+               btnAll.removeClass('color', function(){btn2.addClass('color')});
+               banner_ul.animate({'margin-left':-100+'%'},700);
+            });
+            
+            btn3.on('click', function(){
+               btnAll.removeClass('color', function(){btn3.addClass('color')});
+               banner_ul.animate({'margin-left':-200+'%'},700);
+            });
+            
+            btn4.on('click', function(){
+               btnAll.removeClass('color', function(){btn4.addClass('color')});
+               banner_ul.animate({'margin-left':-300+'%'},700);
+            });
+            
+            //---------mainmenuhover---
+            
+            var menuBox = $('#gnb'),
+                menuli = $('#gnb>li'),
+                submenu = $('.sub_menu');
+            
+            menuli.on('mouseenter', function(){
+               submenu.addClass('submenusize');
+               menuBox.addClass('back');
+               menuli.css({'border-color':'#1d9433'});
+            });
+            menuli.on('mouseleave', function(){
+               submenu.removeClass('submenusize');
+               menuBox.removeClass('back');
+               menuli.css({'border-color':'#333'});
+            });
+            
+ /*banner3------------------------------------------------------------*/
+            var bobBtn = $('.pro_btn>li>button'),
+                bob1 = $('.pro_btn1'),
+                bob2 = $('.pro_btn2'),
+                bob3 = $('.pro_btn3'),
+                bob_ul = $('.bobBtn'); 
+             
+            bob1.on('click', function(){
+               bobBtn.removeClass('color', function(){bob1.addClass('color')});
+               bob_ul.animate({'margin-left':0},700);
+            });
+             
+             bob2.on('click', function(){
+               bobBtn.removeClass('color', function(){bob2.addClass('color')});
+               bob_ul.animate({'margin-left':-100+'%'},700);
+            });
+             
+             bob3.on('click', function(){
+               bobBtn.removeClass('color', function(){bob3.addClass('color')});
+               bob_ul.animate({'margin-left':-200+'%'},700);
+            }); 
+            
+            //-----------------tab,mob menuClick-----
+            
+            var gnbBox = $('#menuBtn'),
+                gnb = $('#gnb'),
+                navBg = $('#navBg'),
+                menu_li = gnb.children('li');
+            
+            gnbBox.on('click', function(){
+               gnb.addClass('gnbBoxAdd');
+               navBg.addClass('navBgAdd');
+              
+            });
+             var navBg = $('#navBg'),
+                 gnb = $('#gnb');
+               navBg.on('click', function(){
+                  $(this).removeClass('navBgAdd');
+                  gnb.removeClass('gnbBoxAdd');
+               });
+            //-----------------tab,mob menuClick-----
+            
+         });//jQuery
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headBox">
+                <h1><a href="index.html"><snap class="me_hidden">logo</snap></a></h1>
+
+               <nav id="gnbBox">
+                  <button id="menuBtn">munu</button>
+                   <ul id="gnb">
+                       <li>
+                          <a href="#">EVENT</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">진행중인 이벤트</a></li>
+                             <li><a href="#">완료된 이벤트</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">PRODUCT</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">이달의 증정할인</a></li>
+                             <li><a href="#">PB상품</a></li>
+                             <li><a href="#">신상품</a></li>
+                             <li><a href="#">쿠폰상품</a></li>
+                             <li><a href="#">할인,멤버십카드</a></li>
+                             <li><a href="#">서비스 안내</a></li>
+                             <li><a href="#">E-CATALOG</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">FRANCHISE</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">가맹가이드</a></li>
+                             <li><a href="#">사업설명회</a></li>
+                             <li><a href="#">가맹 FAQ</a></li>
+                             <li><a href="#">성공스토리</a></li>
+                             <li><a href="#">가맹점포</a></li>
+                             <li><a href="#">가맹상담</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">ABOUT 7-ELEVEN</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">회사소개</a></li>
+                             <li><a href="#">사회공헌</a></li>
+                             <li><a href="#">환경경영</a></li>
+                             <li><a href="#">채용안내</a></li>
+                             <li><a href="#">7-ELEVEN 포스터</a></li>
+                             <li><a href="#">고객의 소리</a></li>
+                             <li><a href="#">공지사항</a></li>
+                             <li><a href="#">7-STORY</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">PARTNER</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">상품입점문의</a></li>
+                             <li><a href="#">동반성장</a></li>
+                          </ul>
+                       </li>
+                   </ul>
+                   <div id="navBg"><!--nav background--></div>
+               </nav>
+
+                <div id="searchBox"><span class="me_hidden">검색</span></div>
+            </div><!--// #headBox-->
+            <span class="h_bar"><!--head_bar--></span>
+        </header><!--//    header-->
+        
+        <article>
+            <div id="bannerWrap">
+                <ul class="button">
+                    <li>
+                    <button class="home_btn color">
+                    <span class="me_hidden">홈</span>
+                    </button>
+                    </li>
+                    
+                    <li>
+                    <button class="evt_btn">
+                    <span class="me_hidden">이벤트</span>
+                    </button>
+                    </li>
+                    
+                    <li>
+                    <button class="pro_btn">
+                    <span class="me_hidden">제품</span>
+                    </button>
+                    </li>
+                    
+                    <li>
+                    <button class="do_btn">
+                    <span class="me_hidden">도시락</span>
+                    </button>
+                    </li>
+                </ul> <!--// .button-->
+                
+                <div class="banner">
+                <ul>
+                    <li class="banner_1"><span class="me_hidden">메인배너_1</span>
+<iframe class="se_video"  src="https://www.youtube.com/embed/e_p1kY2SUFA?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li class="banner_2">
+                        <span class="me_hidden">이벤트배너</span>
+                    <ul class="ev_li">
+                        <li class="ev_li_01 up"><a href="#"><span class="me_hidden">1 plus 1 product</span></a></li>
+                        <li class="ev_li_02 right up"><a href="#"><span class="me_hidden">2 plus 1 product</span></a></li>
+                        <li class="ev_li_03"><a href="#"><span class="me_hidden">증정행사 product</span></a></li>
+                        <li class="ev_li_04 right"><a href="#"><span class="me_hidden">PB상품 product</span></a></li>
+                    </ul>
+                    
+                    <div class="ev_banner">
+                        <ul>
+                            <li class="ev_ban_01"><span class="me_hidden">이벤트배너_01</span></li>
+                            <li class="ev_ban_02"><span class="me_hidden">이벤트배너_02</span></li>
+                            <li class="ev_ban_03"><span class="me_hidden">이벤트배너_03</span></li>
+                            <li class="ev_ban_04"><span class="me_hidden">이벤트배너_04</span></li>
+                            <li class="ev_ban_05"><span class="me_hidden">이벤트배너_05</span></li>
+                        </ul>
+                        <button class="left"><span class="me_hidden">left</span></button>
+                        <button class="right"><span class="me_hidden">right</span></button>
+                    </div>
+                     <ul class="ev_btn">
+                            <li><button><span class="me_hidden">버튼1</span></button></li>
+                            <li><button><span class="me_hidden">버튼2</span></button></li>
+                            <li><button><span class="me_hidden">버튼3</span></button></li>
+                            <li><button><span class="me_hidden">버튼4</span></button></li>
+                            <li><button><span class="me_hidden">버튼5</span></button></li>
+                        </ul>
+                    </li>
+                    <li class="banner_3">
+                        <ul class="pro_bob">
+                            <li class="bob">Best of Best</li>
+                            <li class="bob_box">
+                                <ul class="bobBtn">
+                                    <li class="best_1"><a href="#"><span>망고푸딩1</span></a></li>
+                                    <li class="best_2"><a href="#"><span>망고푸딩2</span></a></li>
+                                    <li class="best_3"><a href="#"><span>망고푸딩3</span></a></li>
+                                </ul>
+                            </li>
+                            <ul class="bob_btn">
+                                <li class="pro_btn1"><button><span class="me_hidden">bob1</span></button></li>
+                                <li class="pro_btn2"><button><span class="me_hidden">bob2</span></button></li>
+                                <li class="pro_btn3"><button><span class="me_hidden">bob3</span></button></li>
+                            </ul>
+                            <span class="pro_deco"><!--bar--></span>
+                        </ul>
+                        
+                        <ul class="pro_li">
+                            <li class="up"><a href="#"><span>음료</span></a></li>
+                            <li class="up"><a href="#"><span>도시락</span></a></li>
+                            <li class="up three" ><a href="#"><span>가공식품</span></a></li>
+                            <li class="down"><a href="#"><span>의약품</span></a></li>
+                            <li class="down"><a href="#"><span>생활용품</span></a></li>
+                            <li class="down"><a href="#"><span>PB상품</span></a></li>
+                        </ul>
+                        
+                    </li>
+                    <li class="banner_4">
+                       <span class="me_hidden">도시락배너</span>
+                        <div class="do_banner"></div>
+                        
+                        <ul class="do_li">
+                            <li class="do_li_1"><a href="#"><span class="me_hidden">배달도시락</span></a></li>
+                            <li class="do_li_2"><a href="#"><span class="me_hidden">예약도시락</span></a></li>
+                            <li class="do_li_3"><a href="#"><span class="me_hidden">이달의도시락</span></a></li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+                </div><!--// .banner-->
+            </div><!--//    #bannerWrap-->
+        </article><!--//    article-->
+        
+        <footer>
+            <div id="footBox">
+                <div id="fInfo">
+                <dl>
+                    <dt>CUSTOM</dt>
+                    <dd><a href="#">고객의소리</a></dd>
+                    <dd><a href="#">채용문의</a></dd>
+                    <dd><a href="#">가맹상담</a></dd>
+                    <dd ><a class="last" href="#">입점문의</a></dd>
+                </dl>
+                
+                <ul>
+                    <li>SITE MAP</li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">롯데멤버스카드</a></li>
+                    <li><a class="last" href="#">롯데올세이프</a></li>
+                </ul>
+                
+                <p>서울특별시 중구 소월로 3 롯데손해보험빌딩 7층 TEL 1577-0711 / FAX 02-2679-6860 <br/><br/>
+                COPYRIGHT LEE HEE AE / CHOI YOUN HYE / HWANG JIN KYOUNG Reserved.</p>
+                </div><!--//    #fInfo-->
+            </div>
+        </footer><!--//    footer-->
+    </div>
+</body>
+</html>

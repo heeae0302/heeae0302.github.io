@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/index_basic.css" />
+    <link rel="stylesheet" href="./css/log_in.css" />
+    
+    <!--[if lte IE 6]>
+    <script src="js/dist/html5shiv.min.js"></script>
+    <script src="js/dist/ie9.min.js"></script>
+    <script src="js/dist/PIE.js"></script>
+    <script src="js/dist/responsive.min.js"></script>
+    <![endif]-->
+
+    <!--script-->
+    <script src="js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    
+
+        <script>
+         $(function(){
+            //---------mainmenuhover---
+            
+            var menuBox = $('#gnb'),
+                menuli = $('#gnb>li'),
+                submenu = $('.sub_menu');
+            
+            menuli.on('mouseenter', function(){
+               submenu.addClass('submenusize');
+               menuBox.addClass('back');
+               menuli.css({'border-color':'#1d9433'});
+            });
+            menuli.on('mouseleave', function(){
+               submenu.removeClass('submenusize');
+               menuBox.removeClass('back');
+               menuli.css({'border-color':'#333'});
+            });
+            
+            //---------mainmenuhover---
+            
+            //----------join/find
+            var logjoinBtn = $('#loginBox').children('button'),
+                box_ul = $('#logjoinBox'),
+                box_li = box_ul.children('li');
+            logjoinBtn.on('click', function(){
+               var btn_index = $('#loginBox').children('button').index(this);
+               box_li.eq(btn_index).addClass('formSize').siblings().removeClass('formSize');
+            });
+                
+            //----------join/find
+            
+         });//jQuery
+   
+    </script>
+   
+    <title>Document</title>
+</head>
+<body>
+        <div id="wrap">
+        <header>
+            <div id="headBox">
+                <h1><a href="index.html"><snap class="me_hidden">logo</snap></a></h1>
+                <nav id="gnbBox">
+                  <button id="menuBtn">munu</button>
+                   <ul id="gnb">
+                       <li>
+                          <a href="#">EVENT</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">진행중인 이벤트</a></li>
+                             <li><a href="#">완료된 이벤트</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">PRODUCT</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">이달의 증정할인</a></li>
+                             <li><a href="#">PB상품</a></li>
+                             <li><a href="#">신상품</a></li>
+                             <li><a href="#">쿠폰상품</a></li>
+                             <li><a href="#">할인,멤버십카드</a></li>
+                             <li><a href="#">서비스 안내</a></li>
+                             <li><a href="#">E-CATALOG</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">FRANCHISE</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">가맹가이드</a></li>
+                             <li><a href="#">사업설명회</a></li>
+                             <li><a href="#">가맹 FAQ</a></li>
+                             <li><a href="#">성공스토리</a></li>
+                             <li><a href="#">가맹점포</a></li>
+                             <li><a href="#">가맹상담</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">ABOUT 7-ELEVEN</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">회사소개</a></li>
+                             <li><a href="#">사회공헌</a></li>
+                             <li><a href="#">환경경영</a></li>
+                             <li><a href="#">채용안내</a></li>
+                             <li><a href="#">7-ELEVEN 포스터</a></li>
+                             <li><a href="#">고객의 소리</a></li>
+                             <li><a href="#">공지사항</a></li>
+                             <li><a href="#">7-STORY</a></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">PARTNER</a>
+                          <ul class="sub_menu">
+                             <li><a href="#">상품입점문의</a></li>
+                             <li><a href="#">동반성장</a></li>
+                          </ul>
+                       </li>
+                   </ul>
+                   <div id="navBg"><!--nav background--></div>
+               </nav>
+                <div id="searchBox"><span class="me_hidden">랄라</span></div>
+            </div><!--// #headBox-->
+            <span class="h_bar"><!--head_bar--></span>
+        </header><!--//    header-->
+        
+        <article>
+           <div id="loginBox">
+              <button class="joinBtn">join_us</button>
+              <button class="findBtn">find id/pw</button>
+              <ul id="logjoinBox">
+                 <li class="joinpage formSize">
+                    <form action="" method="get">
+                       <fieldset>
+                          <legend>회원가입 JOIN-US</legend>
+                          <ol class="infoBox">
+                            <li><label for="join01" class="point">
+                            성명</label></li>
+
+                            <li>
+                            <label for="join02" class="point">
+                            아이디</label>
+                            </li>
+                            <li><label for="join03" >
+                            사진</label></li>
+                            <li><label for="join04" class="point">
+                            패스워드
+                                <span>특수문자를 포함하여 최소 여덟자 이상의 영문글자를 입력하세요</span>
+                            </label></li>
+                            <li><label for="join05" class="point">
+                            패스워드확인
+                            <span>특수문자를 포함하여 최소 여덟자 이상의 영문글자를 입력하세요</span>
+                            </label></li>
+
+                            <li><label for="join06" class="point">
+                            연락처</label></li>
+                            <li><label for="join07" class="point">
+                            이메일</label></li>
+                            <li><label for="join08">
+                            지역선택</label></li>   
+                        </ol>
+                        <ul class="inputBox">
+                            <li><input type="text" id="join_01" name="" value="" required placeholder="이름" /></li>
+                            <li>
+                            <input type="text" id="join_02" name="" value="" required placeholder="아이디" />
+                            <button type="button" name="" id="idCheck" >아이디 중복확인 검사</button>
+                                <label for="idCheck"></label></li>
+                            <li>
+                            <button type="button" id="join_03" name="">파일선택</button></li>
+
+                            <li><input type="password" id="join_04" name="" value="" required placeholder="패스워드 입력"/>
+                            </li>
+                            <li><input type="password" id="join_05" name="" value="" required placeholder="패스워드 확인"/></li>
+                            <li>
+                            <select name="" id="join_06">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="012">012</option>
+                                <option value="013">013</option>
+                                <option value="014">014</option>
+                                <option value="015">015</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                                <option value="0505">0505</option>
+                            </select>
+                            <span><!--  bar  --></span>
+                            <input type="text" name="" id="tel_01" value="" required placeholder="3~4자리번호"/>
+                            <span><!--  bar  --></span>
+                            <input type="text" name="" id="tel_02" value=""  required placeholder="4자리번호"/>
+                            <label for="tel_01">휴대폰 가운데 셋 또는 네자리를 입력하세요</label>
+                            <label for="tel_02">휴대폰 번호 마지막 네자리를 입력하세요</label>
+                            <button type="button" name="휴대폰인증">휴대폰 인증</button>
+                            <dl class="sms">
+                                <dt><abbr title="smart messange system"><strong>SMS</strong></abbr>수신동의</dt>
+                                    <dd><input type="radio" name="sms" id="mobile_yes" /><label for="mobile_yes">예</label> </dd>
+
+                                    <dd><input type="radio" name="sms" id="mobile_no" /><label for="mobile_no">아니오</label> </dd>
+
+                            </dl>
+                             </li>
+
+
+                            <li>
+                            <input type="text" id="join_07" name="" value="" />
+                            <dl class="email">
+                                <dt>이메일 수신동의</dt>
+                                <dd><input type="radio" name="email" id="email_yes" />
+                                <label for="email_yes">예</label></dd>
+                               <dd><input type="radio" name="email" id="email_no" />
+                                <label for="email_no">아니오</label>
+                                </dd>
+                            </dl>
+                            <p>회원가입 완료시 인증메일이 발송되오니 정확한 메일주소를 기재해 주세요!</p>
+                            </li>
+                            <li><select name="" id="join_08">
+                                <option value="010">지역선택</option>
+                                <option value="011">서울특별시</option>
+                                <option value="012">인천광역시</option>
+                                <option value="013">경기도</option>
+                                <option value="014">충청북도</option>
+                                <option value="015">충청남도</option>
+                                <option value="016">경상북도</option>
+                                <option value="017">경상남도</option>
+                                <option value="018">전라북도</option>
+                                <option value="019">전라남도</option>
+                                <option value="0505">제주광역시</option>
+                            </select></li>
+                        </ul>
+                       </fieldset>
+                    </form>
+                 </li>
+                 <li class="findpage"></li>
+              </ul>
+              <div id="submit">
+                 <button id="ok">확인</button>
+                 <button id="reg" type="reset">취소</button>
+              </div>
+           </div> 
+        </article><!--//    article-->
+        <footer>
+            <div id="footBox">
+                <div id="fInfo">
+                <dl>
+                    <dt>CUSTOM</dt>
+                    <dd><a href="#">고객의소리</a></dd>
+                    <dd><a href="#">채용문의</a></dd>
+                    <dd><a href="#">가맹상담</a></dd>
+                    <dd ><a class="last" href="#">입점문의</a></dd>
+                </dl>
+                
+                <ul>
+                    <li>SITE MAP</li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">롯데멤버스카드</a></li>
+                    <li><a class="last" href="#">롯데올세이프</a></li>
+                </ul>
+                
+                <p>서울특별시 중구 소월로 3 롯데손해보험빌딩 7층 TEL 1577-0711 / FAX 02-2679-6860 <br/><br/>
+                COPYRIGHT LEE HEE AE / CHOI YOUN HYE / HWANG JIN KYOUNG Reserved.</p>
+                </div><!--//    #fInfo-->
+            </div>
+        </footer><!--//    footer-->
+    </div>
+</body>
+</html>

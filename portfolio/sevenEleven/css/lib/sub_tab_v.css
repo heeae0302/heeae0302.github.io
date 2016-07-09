@@ -1,0 +1,16 @@
+@media screen and (min-width: 641px) and (max-width: 768px) { #wrap article { height: 1800px; background-size: auto; background-repeat: no-repeat; background-position: center bottom; }
+  #wrap article #articleBox { width: 68vw; /*1020px*/ height: 1800px; margin-left: 16vw; background-color: #fac; }
+  #wrap article #articleBox .title { width: 100%; height: 80px; border-bottom: 1px solid #e8902a; }
+  #wrap article #articleBox .title .gnb_title { width: 100%; background-color: #faa; height: 30px; font-size: 1.875rem; text-align: center; font-weight: bold; color: #595959; }
+  #wrap article #articleBox .title .sub_map { width: 208px; height: 16px; float: right; margin-right: 0; margin-top: 25px; }
+  #wrap article #articleBox .title .sub_map > ul > li { float: left; }
+  #wrap article #articleBox .title .sub_map > ul > li > a { width: 100%; height: 100%; display: block; text-decoration: none; color: #e8902a; color: #aaa; }
+  #wrap article #articleBox .title .sub_map > ul > li:last-child { font-size: 0.85rem; }
+  #wrap article #articleBox .nav_menu { width: 100%; height: 20px; margin-top: 10px; }
+  #wrap article #articleBox .nav_menu li { width: auto; height: 100%; float: left; margin-left: 50px; }
+  #wrap article #articleBox .nav_menu li:first-child { margin-left: 130px; }
+  #wrap article #articleBox .nav_menu li a { width: 100%; height: 100%; display: block; font-size: 0.85rem; text-align: center; line-height: 22px; text-decoration: none; font-weight: 300; color: #555; }
+  #wrap article #articleBox .nav_menu li a:hover { font-weight: bold; color: #30a959; }
+  #wrap article #articleBox #content { width: 100%; height: 1280px; background-color: #aac; margin-top: 50px; } }
+
+/*# sourceMappingURL=sub_tab_v.css.map */

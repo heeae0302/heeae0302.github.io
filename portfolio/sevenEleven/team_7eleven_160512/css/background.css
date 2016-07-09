@@ -1,0 +1,30 @@
+/* background.css */
+
+#warp {width: 800px; height: auto; margin: 0 auto;}
+#header {width: 100%; height: 300px; background-color: #ddd; background-image: url("../img/background/bg1.jpg"); background-repeat: no-repeat; background-position: center center;}
+#article {width: 100%; height: 500px; background-image:url(../img/background/bg2.png); background-repeat:repeat-y;}
+#footer {width: 100%; height: 500px;}
+#footer>h2{width:130px; height:130px; border:1px solid #333; background-image:url(../img/background/icons1.jpg); background-repeat: no-repeat; background-position:center bottom; text-indent:-9999rem;/*text-indent:-9999rem을 사용하면 텍스트가 저~기 저~ 옆~쪽~으으으으으로~~ 가서 안보이게 된다.*/}
+#footer>ul{width:100%; height:44px; background-color: #ccc; margin-bottom:20px;}
+#footer>ol{width:100%; height:44px; background-color: #aaf;}
+#footer li{width:44px; height:100%; float:left; border-right:1px solid; text-indent:-9999rem;}
+
+#footer>ul>li{background-image: url(../img/background/icon2.jpg); background-repeat:no-repeat;}
+.icon_01{background-position: -106px -14px;}
+.icon_02{background-position: -330px -58px;}
+.icon_03{background-position: -510px -58px;}
+.icon_04{background-position: -106px -102px;}
+.icon_05{background-position: -555px -102px;}
+
+/*display-block;*/
+#footer li>a{width:100%; height:100%; background-image: url("../img/background/icon2.jpg"); background-repeat: no-repeat; display:block; text-indent: -9999rem;}
+.icon_11>a{background-position: -106px -14px;}
+.icon_11>a:hover{background-position: -106px -275px;}
+.icon_12>a{background-position: -330px -58px;}
+.icon_12>a:hover{background-position: -330px -320px;}
+.icon_13>a{background-position: -510px -58px;}
+.icon_13>a:hover{background-position: -510px -321px;}
+.icon_14>a{background-position: -106px -102px;}
+.icon_14>a:hover{background-position: -106px -366px;}
+.icon_15>a{background-position: -555px -102px;}
+.icon_15>a:hover{background-position: -555px -364px;}

@@ -1,0 +1,85 @@
+/* log_in.scss */
+
+$MAIN :#30a959;
+$ORANGE :#e8902a;
+$BK : #333;
+
+@media screen and (max-width:480px){
+   #loginBox{width: 100%; height: 300px; background-color: #446;}
+}
+
+@media screen and (min-width:481px) and (max-width:640px){
+   #loginBox{width: 100%; height: 500px; background-color: #959;}
+}
+
+@media screen and (min-width:641px) and (max-width:768px){
+   #loginBox{width: 100%; height: 500px; background-color: #494;}
+}
+
+@media screen and (min-width:769px) and (max-width:1199px){
+   #loginBox{width: 100%; height: 500px; background-color: #399;}
+}
+
+@media screen and (min-width:1200px){
+   #loginBox{width: 960px; height: 700px; margin: 0 auto;
+      >button{width: 47.5%; height: 50px; float: left; background-color: $MAIN; color: #fff; font-size: 1.3rem; fon-weight: bold; cursor: pointer;
+         &.joinBtn{margin-right: 5%;}
+      }
+      >#logjoinBox{width: 100%; height: 650px; float: left;
+         >li{width: 0; height: 0; overflow: hidden;
+            &.joinpage{width: 0; height: 0; overflow: hidden;
+               >form{width: 100%; height: 100%;
+                  >fieldset{width: 100%; height: 100%; padding-top: 30px;
+                     >legend{/*width: 100%; height: 30px; padding: 20px; color: $MAIN; font-weight: bold; font-size: 1.3rem;*/ display: none;}
+                     >.infoBox{width: 20%; height: calc(100% - 70px); float: left;
+                        >li{width: 100%; height: 65px; text-align:  right;
+                           >label{width: 100%; height: 100%; color: $BK; line-height: 65px;
+                              >span{width: 0; height: 0; overflow: hidden; display: block;}
+                           }// label
+                        }// li
+                     }// .infoBox --ol
+                     >.inputBox{width: calc(80% - 30px); height: calc(100% - 70px); padding-left: 30px; float: left;
+                        >li{width: 100%; height: 65px;
+                           >input{width: 100px; height: 20px; text-indent: 0.125rem; margin-top: 20px; float: left; font-size: 0.875rem;
+                              &#join_01{}// #join_01
+                              &#join_02{}// #join_02
+                              &#join_04{}// #join_04
+                              &#join_05{}// #join_05
+                              &#join_07{width: 200px;}// #join_07
+                              &#tel_01{width: 80px;}// #tel_01
+                              &#tel_02{width: 80px;}// #tel_02
+                           }
+                           >button{width: 80px; height: 20px; padding-top: 4px; margin-top: 20px; margin-left: 20px; float: left; cursor: pointer; font-size: 0.875rem; text-indent: 0.125rem; background-color: $MAIN; color: #fff; 
+                              &#idCheck{width: 150px;}
+                              &#join_03{margin-left: 0;}
+                           }
+                           >label{width: 0; height: 0; overflow: hidden; display: block;}
+                           >span{width: 15px; height: 30px; margin: 0 10px; border-bottom: 1px solid #050505; display: block; float: left;}
+                           >.sms{float: left;
+                              >dt{margin-top: 20px; margin-left: 15px; float: left;}
+                              >dd{margin-top: 20px; margin-left: 15px; float: left;}
+                           }// .sns --dl
+                           >.email{float: left;
+                              >dt{margin-top: 20px; margin-left: 10px; float: left;}
+                              >dd{margin-top: 20px; margin-left: 15px; float: left;
+                                 >input{}
+                              }
+                           }// .email --dl
+                           >p{width: 0; height: 0; display: block; overflow: hidden;}
+                           >#join_06{margin-top: 20px; float: left;}
+                           >#join_08{ float: left;
+                              margin-top: 20px;
+                           }// #join_08 --select
+                        }// li
+                     }// .inputBox
+                  }// fieldset
+               }// form
+            }// .joinpage
+         }//li
+         .formSize{width: 100% !important; height: 100% !important; display: block; background-color: rgba($MAIN,0.2);}
+      }//ul
+      >#submit{width: 500px; height: 30px; background-color: #151; margin: 0 auto;
+         >button{width: 50px; height: 100%; float: left; cursor: pointer;}
+      }
+   }// #loginBox
+}
