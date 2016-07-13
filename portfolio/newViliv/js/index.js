@@ -23,4 +23,16 @@ function index_js (){
       
    });//map_btn클릭
    
+   var menu = $('#gnb'),
+       nav = $('nav');
+   menu.on('click', function(){
+      var backClick = $('#backClick');
+      nav.addClass('navClick');
+      backClick.on('click', function(){
+         var gnb = $('#gnb');
+         nav.removeClass('navClick');
+      });
+   });// tab mob menu Click
+   
+   
 };
