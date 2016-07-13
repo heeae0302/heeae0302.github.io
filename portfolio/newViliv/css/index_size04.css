@@ -1,0 +1,47 @@
+@media screen and (min-width: 1025px) and (max-width: 1799px) { #container { width: 100%; height: auto; position: relative; }
+  #container > header { width: 100%; height: 70px; background-color: #fff; position: fixed; top: 0; z-index: 2000; }
+  #container > header > h1 { width: 150px; height: 60px; padding-top: 5px; margin-left: 30px; float: left; }
+  #container > header > h1 > a { width: 100%; height: 100%; background-image: url(../img/logo.png); background-repeat: no-repeat; background-position: center; background-size: contain; display: block; }
+  #container > header > nav { width: calc(50% - 15px); height: 100%; margin-right: 15px; float: right; }
+  #container > header > nav > #gnb { width: 100%; height: 100%; }
+  #container > header > nav > #gnb > li { width: calc(100% / 4); height: 100%; border-left: 1px solid #777; box-sizing: border-box; float: left; text-align: center; }
+  #container > header > nav > #gnb > li:last-child { border-right: 1px solid #777; }
+  #container > header > nav > #gnb > li > a { width: 100%; height: 100%; display: block; color: #333333; text-decoration: none; font-size: 1.1rem; font-weight: bold; line-height: 70px; }
+  #container > header > nav > #gnb > li > a:hover { background-color: rgba(100, 100, 100, 0.2); }
+  #container > #mapLine { width: 20px; height: 100vh; position: absolute; left: calc(50% - 20px); border-right: 1px solid #777; }
+  #container > #mapLine > ul { width: 40px; height: 700px; padding-top: 100px; margin-top: 100px; }
+  #container > #mapLine > ul > li { width: 100%; height: 40px; margin-bottom: 100px; background-color: #fff; border: 2px solid #1f1f1f; box-sizing: border-box; border-radius: 25px; text-align: center; overflow: hidden; transition: all 0.3s; }
+  #container > #mapLine > ul > li:hover { width: 100px; margin-left: -30px; background-color: #1f1f1f; border-radius: 24px; text-align: center; }
+  #container > #mapLine > ul > li:hover > a { width: 100%; height: 100%; display: block; line-height: 40px; text-decoration: none; color: #fff; }
+  #container > #mapLine > ul > li.select_map { width: 100px; margin-left: -30px; background-color: #1f1f1f; border-radius: 24px; text-align: center; }
+  #container > #mapLine > ul > li.select_map > a { width: 100%; height: 100%; display: block; line-height: 40px; text-decoration: none; color: #fff; }
+  #container > #mapLine > ul > li.select_map > span { display: none; }
+  #container > #mapLine > ul > li > a { display: none; }
+  #container > #mapLine > ul > li > span { width: 40px; height: 40px; line-height: 40px; font-weight: bold; }
+  #container > section { width: 100%; height: 100vh; overflow: hidden; }
+  #container > section > article { width: 100%; height: 100%; }
+  #container > section > article#p01 { background-color: #d3c6bd; }
+  #container > section > article#p02 { background-color: #dbe2d1; display: none; }
+  #container > section > article#p03 { background-color: #e4dcd9; display: none; }
+  #container > section > article#p04 { background-color: #c7dbe4; display: none; }
+  #container > section > article > div { width: 50%; height: 100%; margin-top: 0; float: left; }
+  #container > section > article > div.left_side { margin-top: -100%; }
+  #container > section > article > div.right_side { margin-top: 100%; }
+  #container > section > article > div.margin_set { margin-top: 0; }
+  #container > section > article > div > .img_box { width: 40vw; height: 53.333333vw; margin: 0 auto; margin-top: 100px; background-color: #fff; }
+  #container > section > article > div > .img_box > img { width: 100%; height: 100%; }
+  #container > section > article > div > .li_box { width: 40vw; height: 53.333333vw; margin: 0 auto; margin-top: 100px; }
+  #container > section > article > div > .li_box > p { width: 100%; height: 100px; margin-top: 5px; float: left; font-size: 2.2rem; text-align: center; line-height: 100px; color: #1f1f1f; font-weight: bold; }
+  #container > section > article > div > .li_box > ul { width: 100%; height: 40vw; margin-top: 10px; background-color: #16a; float: left; }
+  #container > section > article > div > .li_box > ul > li { width: 13.333333vw; height: 13.333333vw; background-color: #9af; float: left; }
+  #container > section > article > div > .li_box > ul > li:hover { border: 5px solid #fff; box-sizing: border-box; cursor: pointer; }
+  #container > section > article > div > .li_box > ul > li > img { width: 100%; height: 100%; }
+  #container > section > article > div > .li_box > a { width: 60px; height: 20px; margin-top: 10px; margin-right: 20px; float: right; display: block; text-align: center; line-height: 20px; text-decoration: none; color: #050505; }
+  #container > section > article > div > .li_box > a:hover { font-weight: bold; }
+  #container > footer { width: 100%; height: 50px; }
+  #container > footer > #footUl { width: 900px; height: 100%; margin: 0 auto; }
+  #container > footer > #footUl > li { width: 20%; height: 20px; margin-top: 15px; border-right: 1px solid #777; box-sizing: border-box; text-align: center; float: left; }
+  #container > footer > #footUl > li:last-child { border-right: 0; }
+  #container > footer > #footUl > li > a { width: 100%; height: 100%; display: block; line-height: 20px; text-decoration: none; font-size: 0.95rem; color: #333; } }
+
+/*# sourceMappingURL=index_size04.css.map */
