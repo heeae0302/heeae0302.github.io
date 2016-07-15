@@ -2,8 +2,8 @@
 
 
 @media screen and (max-width:480px) {
-#container{width: 100%; min-width: 430px; height: auto; position: relative; 
-   >header{width: 100%; min-width: 430px; height: 60px; background-color: #fff; position: fixed; top: 0; z-index: 2000;
+#container{width: 100%; min-width: 300px; height: auto; position: relative; 
+   >header{width: 100%; min-width: 300px; height: 60px; background-color: #fff; position: fixed; top: 0; z-index: 2000;
       >h1{width: 130px; height: 50px; padding-top: 5px; margin-left: 30px; float: left;
          >a{width: 100%; height: 100%; background-image: url(../img/logo.png); background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
       }// h1
@@ -24,15 +24,15 @@
          }// .navClick
       }// nav
    }// header
-   >#mapLine{width: 100%; min-width: 430px; height: 20px; position: absolute; top: 100px; left: 0; border-bottom: 1px solid #777;
-      >ul{width: 370px; height: 40px; margin: 0 auto;
-         >li{width: 40px; height: 40px; margin-right: 60px; background-color: #fff; border: 2px solid #1f1f1f; box-sizing: border-box; border-radius: 25px; text-align: center; overflow: hidden; transition: all 0.3s; float: left;
+   >#mapLine{width: 100%; min-width: 300px; height: 20px; position: absolute; top: 100px; left: 0; border-bottom: 1px solid #777;
+      >ul{width: calc(100vw - 60px); min-width: 300px; height: 40px; margin-left: 20px;
+         >li{width: 40px; height: 40px; margin-right: calc((100% - 200px) / 4); background-color: #fff; border: 2px solid #1f1f1f; box-sizing: border-box; border-radius: 25px; text-align: center; overflow: hidden; transition: all 0.3s; float: left;
             &:last-child{margin-right: 0;}
             &:hover{background-color: #1f1f1f;
                >a{display: none;}
                >span{color: #fff;}
             }
-            &.select_map{width :100px; margin-left: -30px; background-color: #1f1f1f; border-radius: 24px; text-align: center;
+            &.select_map{width :100px;background-color: #1f1f1f; border-radius: 24px; text-align: center;
                >a{width: 100%; height: 100%; display: block; line-height: 40px; text-decoration: none; color: #fff;}
                >span{display: none;}
             }// .select_map -li's class
@@ -41,23 +41,23 @@
          }// li
       }// #mapLine > ul
    }// #mapLine
-   >section{width: 100%; height: 1200px; overflow: hidden;
+   >section{width: 100%; height: 1050px; overflow: hidden;
       >article{width: 100%; height: 100%;
          &#p01{background-color: #d3c6bd;}
          &#p02{background-color: #dbe2d1; display: none;}
          &#p03{background-color: #e4dcd9; display: none;}
          &#p04{background-color: #c7dbe4; display: none;}
-         >div{width: 100%; height: 500px; margin-top: 0; float: left;
+         >div{width: 100%; height: 420px; margin-top: 0; float: left;
             &.left_side{margin-left: -100%; margin-top: 180px;}
             &.right_side{margin-left: 100%;}
             &.margin_set{margin-left: 0;}
-            >.img_box{width: 360px; height: 480px; margin: 0 auto; background-color: #fff;
+            >.img_box{width: 300px; height: 400px; margin: 0 auto; background-color: #fff;
                >img{width: 100%; height: 100%;}
             }// .img_box - div
-            >.li_box{width: 360px; height: 480px; margin: 0 auto;
+            >.li_box{width: 300px; height: 400px; margin: 0 auto;
                >p{width: 100%; height: 50px; float: left; font-size: 1.3rem; text-align: center; line-height: 50px; display: block; color: #1f1f1f; font-weight: bold;}// p - categoryName
-               >ul{width: 100%; height: 360px; background-color: #16a; float: left;
-                  >li{width: 120px; height: 120px; background-color: #9af; float: left;
+               >ul{width: 100%; height: 300px; background-color: #16a; float: left;
+                  >li{width: 100px; height: 100px; background-color: #9af; float: left;
                      &:hover{border: 5px solid #fff; box-sizing: border-box; cursor: pointer;}
                      >img{width: 100%; height: 100%;}
                   }
@@ -69,7 +69,7 @@
          }
       }//article
    }// section
-   >footer{width: 100%; height: 70px;
+   >footer{width: 100%; min-width: 300px; height: 70px;
       >#footUl{width: 300px; height: 100%; margin: 0 auto;
          >li{width: 100px; height: 15px; margin-top: 10px; border-right: 1px solid #777; box-sizing: border-box; text-align: center; float: left;
             &:nth-child(3){border-right: 0;}

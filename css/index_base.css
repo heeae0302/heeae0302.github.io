@@ -1,0 +1,78 @@
+/*@media screen and (min-width:480px) and (max-width:999px){ #container{width: 100%; height: 100vh; position: relative; >header{width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: 42.5px; padding-top: 7.5px; background-color: #fff; position: absolute; top: 0; left: 0; z-index: 2000; >h1{width: 140px; height: 35px; margin: 0 auto; >a{width: 100%; height: 100%; display: block; background-image: url(../img/heeae_logo.png); background-repeat: no-repeat; background-position: center; background-size: contain;} } &.headerMin{width: 10%;} &.headerMax{width: 90%;} }// header >article{width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: calc(100% - 50px); overflow: hidden; position: absolute; &#me{position: absolute; top: 50px; left: 0; >#mainMe{width: 100%; height: calc(100% - 200px); padding-top: 200px; background-image: url(../img/backgroundPattern_od.jpg); transition: all 0.5s; text-align: center; font-size: 1.7rem; font-weight: bold; color: #bed6d6; &:hover{background-image: url(../img/backgroundPattern.jpg); cursor: pointer; transition: all 0.5s; color: #366161;} }// #mainMe - div >section{width: 100%; height: calc(100% - 100px); padding-top: 100px; background-image: url(../img/backgroundPattern_od.jpg); display: none; >#textInfo{width: 800px; height: 200px; background-color: #fff; margin: 0 auto;} >#infographic{width: 740px; height: 510px; margin: 0 auto; position: relative; >img{width: 360px; height: 100%; margin-top: 50px; float: left; &:hover{cursor: pointer;} &.margin_right{margin-right: 20px;} } }// #infographic } } &#work{position: absolute; top: 0; right: 0; >#mainWork{width: 100%; height: calc(100% - 200px); padding-top: 200px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold; &:hover{background-color: #366161; transition: all 0.5s; color: #bed6d6; cursor: pointer;} }// #mainWork - div >section{width: 100%; height: calc(100% - 200px); padding-top: 200px; background-color: #bed6d6; display: none; >dl{width: 800px; height: 500px; background-color: #1d915a; margin: 0 auto; >dt{width: 100px; height: 100%; float: left; background-color: #bed6d6; border: 3px solid #366161; box-sizing: border-box; &:hoever{cursor: pointer} &.pf01_dt{} &.pf02_dt{} &.pf03_dt{} &.select_dt{background-color: #366161;} }// dt >dd{width: 0; height: 100%; background-color: #a151d6; float: left; overflow: hidden; &.dd_size{width: 500px;} >button{width: 100px; height: 30px; background-color: #fff; border: 2px solid #555; border-radius: 20px;} }// dd }// dl }// section article{width: 100%; height: 100%; display: none; &#pf01{background-color: #615615;} &#pf02{background-color: #561561;} &#pf03{background-color: #156156;} >button{width: 100px; height: 30px; background-color: #fff; border: 2px solid #555; border-radius: 20px;} }// article }// #work &.articleMin{width: 10%;} &.articleMax{width: 90%;} }// article >footer{width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: 50px; background-color: #fff; position: absolute; bottom: 0; right: 0; text-align: center; font-size: 0.875rem; line-height: 50px; &.footerMin{width: 10%;} &.footerMax{width: 90%;} } }// #container
+}*/
+@media screen and (min-width: 1024px) { #container { width: 100%; height: 100vh; position: relative; }
+  #container > header { width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: 42.5px; padding-top: 7.5px; background-color: #fff; position: absolute; top: 0; left: 0; z-index: 2000; }
+  #container > header > h1 { width: 140px; height: 35px; margin: 0 auto; }
+  #container > header > h1 > a { width: 100%; height: 100%; display: block; background-image: url(../img/heeae_logo.png); background-repeat: no-repeat; background-position: center; background-size: contain; }
+  #container > header.headerMin { width: 10%; }
+  #container > header.headerMax { width: 90%; }
+  #container > article { width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: calc(100% - 50px); overflow: hidden; position: absolute; }
+  #container > article#me { position: absolute; top: 50px; left: 0; }
+  #container > article#me > #mainMe { width: 100%; height: calc(100% - 200px); padding-top: 200px; background-image: url(../img/backgroundPattern_od.jpg); transition: all 0.5s; text-align: center; font-size: 1.7rem; font-weight: bold; color: #bed6d6; }
+  #container > article#me > #mainMe:hover { background-image: url(../img/backgroundPattern.jpg); cursor: pointer; transition: all 0.5s; color: #366161; }
+  #container > article#me > section { width: 100%; height: calc(100% - 50px); padding-top: 50px; background-image: url(../img/backgroundPattern_od.jpg); display: none; }
+  #container > article#me > section > #textInfo { width: 800px; height: 200px; background-color: #fff; margin: 0 auto; }
+  #container > article#me > section > #textInfo > .ellie { width: 300px; height: 200px; float: left; }
+  #container > article#me > section > #textInfo > .ellie > img { width: 100%; height: 100%; }
+  #container > article#me > section > #textInfo > .profile { width: 200px; height: 120px; margin-top: 40px; margin-left: 25px; float: left; line-height: 30px; text-align: center; font-size: 1rem; font-weight: bold; }
+  #container > article#me > section > #textInfo > .openchat { width: 250px; height: 200px; margin-left: 25px; float: left; }
+  #container > article#me > section > #textInfo > .openchat > .openchat_icon { width: 80px; height: 80px; margin: 0 auto; margin-top: 40px; background-image: url(../img/kakaotalkImg.png); background-repeat: no-repeat; background-position: center; background-size: contain; display: block; }
+  #container > article#me > section > #textInfo > .openchat > .openchat_text { width: 100%; height: 40px; text-align: center; display: block; line-height: 40px; text-decoration: none; color: #1f1f1f; }
+  #container > article#me > section > #infographic { width: 740px; height: 510px; margin: 0 auto; margin-top: 50px; position: relative; }
+  #container > article#me > section > #infographic > img { width: 360px; height: 100%; float: left; }
+  #container > article#me > section > #infographic > img:hover { cursor: pointer; }
+  #container > article#me > section > #infographic > img.margin_right { margin-right: 20px; }
+  #container > article#work { position: absolute; top: 0; right: 0; }
+  #container > article#work > #mainWork { width: 100%; height: calc(100% - 250px); padding-top: 250px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold; }
+  #container > article#work > #mainWork:hover { background-color: #366161; transition: all 0.5s; color: #bed6d6; cursor: pointer; }
+  #container > article#work > section { width: 100%; height: calc(100% - 150px); padding-top: 150px; background-color: #bed6d6; display: none; }
+  #container > article#work > section > ul { width: 800px; height: 500px; margin: 0 auto; }
+  #container > article#work > section > ul > li { width: 200px; height: 200px; margin-top: 150px; margin-left: 50px; float: left; border-radius: 25px; cursor: pointer; background-color: #fff; background-repeat: no-repeat; background-position: center; background-size: contain; }
+  #container > article#work > section > ul > li.go_pf01 { background-image: url(../img/viliv_.jpg); }
+  #container > article#work > section > ul > li.go_pf01:hover { background-image: url(../img/viliv_hover.jpg); }
+  #container > article#work > section > ul > li.go_pf02 { background-image: url(../img/sevenEleven_.jpg); }
+  #container > article#work > section > ul > li.go_pf02:hover { background-image: url(../img/sevenEleven_hover.jpg); }
+  #container > article#work > article { width: 100%; height: 100%; display: none; }
+  #container > article#work > article > div { width: 800px; height: 100%; background-color: #fff; margin: 0 auto; }
+  #container > article#work > article > div > button { width: 70px; height: 70px; margin-top: 20px; margin-left: 50px; background-color: #fff; border: 2px solid #555; border-radius: 20px; cursor: pointer; float: left; color: #333; font-weight: bold; }
+  #container > article#work > article > div > h2 { width: 300px; height: 70px; margin-top: 20px; margin-left: 40px; background-color: #faa; line-height: 70px; font-size: 1.5rem; text-align: center; display: block; float: left; }
+  #container > article#work > article > div > a { width: 240px; height: 70px; margin-top: 20px; margin-left: 40px; background-color: #fff; border: 2px solid #555; border-radius: 20px; box-sizing: border-box; text-align: center; line-height: 70px; text-decoration: none; color: #333; font-weight: bold; float: left; }
+  #container > article#work > article > div > .working { width: 100%; height: 50px; margin-top: 20px; float: left; }
+  #container > article#work > article > div > .working > li { width: 30%; height: 100%; margin-right: 5%; float: left; text-align: center; background-color: #abc; line-height: 50px; }
+  #container > article#work > article > div > .working > li:last-child { margin-right: 0; }
+  #container > article#work > article > div > .working > li.click_css { border-bottom: 2px solid #777; box-sizing: border-box; }
+  #container > article#work > article > div > .working_view { width: 100%; height: calc(100% - 200px); margin-top: 20px; background-color: #fa0; float: left; overflow-y: scroll; }
+  #container > article#work > article > div > .working_view > ul { width: 100%; height: 100%; }
+  #container > article#work > article > div > .working_view > ul > li { width: 0; height: 0; overflow: hidden; }
+  #container > article#work > article > div > .working_view > ul > li.working_size { width: 100%; height: 680px; background-color: #fff; }
+  #container > article#work > article > div > .working_view > ul > li.style > div { float: left; }
+  #container > article#work > article > div > .working_view > ul > li.style > div > h3 { width: 100%; height: 30px; display: block; text-align: center; border-top: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box; line-height: 30px; background-color: #faa; }
+  #container > article#work > article > div > .working_view > ul > li.style > div > div { width: 100%; height: auto; margin-top: 40px; text-align: center; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style01 { width: 290px; height: 170px; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style02 { width: 290px; height: 170px; margin-top: 170px; margin-left: -290px; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style03 { width: 490px; height: 340px; border-left: 1px solid #faa; box-sizing: border-box; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style03 > div { width: 100%; height: 100%; margin-top: 0; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style03 > div > img { width: 100%; height: 100%; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style04 { width: 490px; height: 340px; border-right: 1px solid #faa; box-sizing: border-box; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style04 > div { width: 100%; height: 100%; margin-top: 0; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style04 > div > img { width: 100%; height: 100%; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style05 { width: 290px; height: 170px; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style05 > div { margin-top: 25px; }
+  #container > article#work > article > div > .working_view > ul > li.style > div.style06 { width: 290px; height: 170px; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div { float: left; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div > h3 { width: 100%; height: 30px; border-top: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box; text-align: center; line-height: 30px; background-color: #faa; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div > h3 > span { font-size: 0.725rem; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div > div { width: 100%; height: calc(100% - 30px); overflow-y: scroll; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div.html_part { width: 390px; height: 100%; border-right: 1px solid #faa; box-sizing: border-box; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div.css_part { width: 390px; height: 50%; }
+  #container > article#work > article > div > .working_view > ul > li.coding > div.jquery_part { width: 390px; height: 50%; }
+  #container > article#work > article#pf01 { background-color: #f1f595; }
+  #container > article#work > article#pf02 { background-color: #5f6f9f; }
+  #container > article#work > article#pf03 { background-color: #ff1590; }
+  #container > article.articleMin { width: 10%; }
+  #container > article.articleMax { width: 90%; }
+  #container > footer { width: 50%; min-width: 150px; max-width: calc(100% - 150px); height: 50px; background-color: #fff; position: absolute; bottom: 0; right: 0; text-align: center; font-size: 0.875rem; line-height: 50px; }
+  #container > footer.footerMin { width: 10%; }
+  #container > footer.footerMax { width: 90%; } }
+
+/*# sourceMappingURL=index_base.css.map */
