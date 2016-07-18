@@ -196,6 +196,7 @@
             #container > article#work > article > div > button {
               width: 50px;
               height: 50px;
+              margin-left: calc(50% - 31.25vw - 27.5px);
               background-color: #fff;
               border: 2px solid #555;
               border-radius: 20px;
@@ -219,7 +220,7 @@
               /*250px*/
               height: 50px;
               margin-top: 5px;
-              margin-left: 5px;
+              margin-left: calc(50% - 31.25vw - 27.5px);
               background-color: #fff;
               border: 2px solid #555;
               border-radius: 20px;
@@ -384,6 +385,8 @@
                         #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul > li:nth-child(2) {
                           background-color: #fcf; }
                   #container > article#work > article > div > .working_view > ul > li.coding > div {
+                    width: 90%;
+                    margin-left: 5%;
                     float: left;
                     background-color: #fff; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div > h3 {
@@ -397,19 +400,16 @@
                     #container > article#work > article > div > .working_view > ul > li.coding > div > div {
                       width: 100%;
                       height: 200px;
-                      overflow-y: scroll;
+                      overflow-y: auto;
                       word-wrap: break-word; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.html_part {
-                      width: 100%;
                       border-left: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.css_part {
-                      width: 100%;
                       border-right: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.jquery_part {
-                      width: 100%;
                       border-right: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }

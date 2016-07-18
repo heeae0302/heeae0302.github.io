@@ -422,7 +422,7 @@
                     #container > article#work > article > div > .working_view > ul > li.coding > div > div {
                       width: 100%;
                       height: calc(100% - 30px);
-                      overflow-y: scroll;
+                      overflow-y: auto;
                       word-wrap: break-word; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.html_part {
                       width: 38.085937vw;
