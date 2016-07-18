@@ -2,7 +2,6 @@
 @media screen and (max-width: 319px) {
   #container {
     width: 100%;
-    min-width: 319px;
     height: 100vh;
     position: relative; }
     #container > header {
@@ -112,10 +111,10 @@
                 color: #1f1f1f;
                 font-size: 0.875rem; }
           #container > article#me > section > #infographic {
-            width: 82.5vw;
-            /*264px*/
-            height: 233.75vw;
-            /*374px=116.875vw * 2*/
+            width: 75vw;
+            /*240px*/
+            height: 212.5vw;
+            /*340=106.25vw * 2*/
             margin: 0 auto;
             margin-top: 20px;
             position: relative; }
@@ -133,8 +132,8 @@
         right: 0; }
         #container > article#work > #mainWork {
           width: 100%;
-          height: calc(100% - 250px);
-          padding-top: 250px;
+          height: calc(100% - 200px);
+          padding-top: 200px;
           background-color: #bed6d6;
           transition: all 0.5s;
           color: #366161;
@@ -148,8 +147,8 @@
             cursor: pointer; }
         #container > article#work > section {
           width: 100%;
-          height: calc(100% - 100px);
-          padding-top: 100px;
+          height: calc(100% - 50px);
+          padding-top: 50px;
           background-color: #bed6d6;
           display: none;
           overflow-y: auto; }
@@ -181,14 +180,15 @@
                   background-image: url(../img/sevenEleven_hover.jpg); }
         #container > article#work > article {
           width: 100%;
-          height: calc(100% - 70px);
-          padding-top: 70px;
+          height: calc(100% - 20px);
+          padding-top: 20px;
           display: none;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: contain; }
+          background-size: contain;
+          overflow-y: auto; }
           #container > article#work > article > div {
-            width: 81.25vw;
+            width: 100%;
             /*260px*/
             height: 100%;
             margin: 0 auto;
@@ -265,10 +265,11 @@
                 #container > article#work > article > div > .working_view > ul > li {
                   width: 0;
                   height: 0;
-                  overflow-y: auto; }
+                  /*overflow-y: auto;*/
+                  overflow: hidden; }
                   #container > article#work > article > div > .working_view > ul > li.working_size {
                     width: 100%;
-                    height: 100%; }
+                    height: auto; }
                   #container > article#work > article > div > .working_view > ul > li.style > div {
                     float: left;
                     background-color: #fff;
@@ -330,10 +331,10 @@
                       width: 50%;
                       height: 110px; }
                   #container > article#work > article > div > .working_view > ul > li.design > .designBox {
-                    width: 81.25vw;
+                    width: 100%;
                     /*260px*/
-                    height: 70.8125vw;
-                    /*226.6px*/
+                    height: 87.1875vw;
+                    /*279px*/
                     float: left;
                     background-color: #fff;
                     position: relative;
@@ -395,23 +396,20 @@
                         font-size: 0.725rem; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div > div {
                       width: 100%;
-                      height: calc(100% - 20px);
+                      height: 200px;
                       overflow-y: scroll;
                       word-wrap: break-word; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.html_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-left: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.css_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-right: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.jquery_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-right: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }
@@ -542,10 +540,10 @@
                 color: #1f1f1f;
                 font-size: 0.875rem; }
           #container > article#me > section > #infographic {
-            width: 82.5vw;
-            /*264px*/
-            height: 233.75vw;
-            /*374px=116.875vw * 2*/
+            width: 75vw;
+            /*240px*/
+            height: 212.5vw;
+            /*340=106.25vw * 2*/
             margin: 0 auto;
             margin-top: 20px;
             position: relative; }
@@ -563,8 +561,8 @@
         right: 0; }
         #container > article#work > #mainWork {
           width: 100%;
-          height: calc(100% - 250px);
-          padding-top: 250px;
+          height: calc(100% - 200px);
+          padding-top: 200px;
           background-color: #bed6d6;
           transition: all 0.5s;
           color: #366161;
@@ -578,8 +576,8 @@
             cursor: pointer; }
         #container > article#work > section {
           width: 100%;
-          height: calc(100% - 100px);
-          padding-top: 100px;
+          height: calc(100% - 50px);
+          padding-top: 50px;
           background-color: #bed6d6;
           display: none;
           overflow-y: auto; }
@@ -611,14 +609,15 @@
                   background-image: url(../img/sevenEleven_hover.jpg); }
         #container > article#work > article {
           width: 100%;
-          height: calc(100% - 70px);
-          padding-top: 70px;
+          height: calc(100% - 20px);
+          padding-top: 20px;
           display: none;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: contain; }
+          background-size: contain;
+          overflow-y: auto; }
           #container > article#work > article > div {
-            width: 81.25vw;
+            width: 100%;
             /*260px*/
             height: 100%;
             margin: 0 auto;
@@ -695,10 +694,11 @@
                 #container > article#work > article > div > .working_view > ul > li {
                   width: 0;
                   height: 0;
-                  overflow-y: auto; }
+                  /*overflow-y: auto;*/
+                  overflow: hidden; }
                   #container > article#work > article > div > .working_view > ul > li.working_size {
                     width: 100%;
-                    height: 100%; }
+                    height: auto; }
                   #container > article#work > article > div > .working_view > ul > li.style > div {
                     float: left;
                     background-color: #fff;
@@ -760,10 +760,10 @@
                       width: 50%;
                       height: 110px; }
                   #container > article#work > article > div > .working_view > ul > li.design > .designBox {
-                    width: 81.25vw;
+                    width: 100%;
                     /*260px*/
-                    height: 70.8125vw;
-                    /*226.6px*/
+                    height: 87.1875vw;
+                    /*279px*/
                     float: left;
                     background-color: #fff;
                     position: relative;
@@ -825,23 +825,20 @@
                         font-size: 0.725rem; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div > div {
                       width: 100%;
-                      height: calc(100% - 20px);
+                      height: 200px;
                       overflow-y: scroll;
                       word-wrap: break-word; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.html_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-left: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.css_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-right: 1px solid #faa;
                       box-sizing: border-box; }
                     #container > article#work > article > div > .working_view > ul > li.coding > div.jquery_part {
                       width: 100%;
-                      height: 33.333333%;
                       border-right: 1px solid #faa;
                       border-bottom: 1px solid #faa;
                       box-sizing: border-box; }
