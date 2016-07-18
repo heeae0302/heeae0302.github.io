@@ -1,0 +1,136 @@
+// index_size03.scss
+@media screen and (max-width:319px) {
+   #container{width: 100%; min-width: 319px; height: 100vh; position: relative;
+      >header{width: 100%; height: 42.5px; padding-top: 7.5px; background-color: #bed6d6; position: absolute; top: 0; left: 0; z-index: 2000;
+         >h1{width: 140px; height: 35px; margin: 0 auto;
+            >a{width: 100%; height: 100%; display: block; background-image: url(../img/heeae_logo.png); background-repeat: no-repeat; background-position: center; background-size: contain;}
+         }
+      }// header
+      >article{width: 50%; min-width: 50px; max-width: calc(100% - 50px); height: calc(100% - 100px); position: absolute; overflow: hidden;
+         &#me{position: absolute; top: 50px; left: 0; 
+            >#mainMe{width: 100%; height: calc(100% - 200px); padding-top: 200px; background-image: url(../img/backgroundPattern_od.jpg); transition: all 0.5s; text-align: center; font-size: 1.7rem; font-weight: bold; color: #bed6d6; 
+               &:hover{background-image: url(../img/backgroundPattern.jpg); cursor: pointer; transition: all 0.5s; color: #366161;}
+            }// #mainMe - div
+            >section{width: 100%; height: calc(100vh - 150px); padding-top: 50px; background-image: url(../img/backgroundPattern_od.jpg); display: none; overflow-y: auto;
+               >#textInfo{width: 75vw;/*240px*/ height: calc(18.75vw + 100px); background-color: #fff; margin: 0 auto;
+                  >.ellie{width: 37.5vw;/*120px*/ height: 18.75vw;/*60px*/ float: left;
+                     >img{width: 100%; height: 100%;}
+                  }
+                  >.profile{width: 100%; height: 85px; padding-top: 10px; margin-top: 10px; float: left; line-height: 20px; text-align: center; font-size: 1rem; font-weight: bold;}
+                  >.openchat{width: 37.5vw; height: 18.75vw; margin-top: calc(-18.75vw - 105px); margin-left: 37.5vw; float: left;
+                     >.openchat_icon{width: 12.5vw;/*40px*/ height: 12.5vw;/*40px*/ margin: 0 auto; background-image: url(../img/kakaotalkImg.png); background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
+                     >.openchat_text{width: 100%; height: 20px; margin-top: 10px; text-align: center; display: block; line-height: 20px; text-decoration: none; color: #1f1f1f; font-size: 0.875rem;}
+                  }
+               }
+               >#infographic{width: 82.5vw;/*264px*/ height: 233.75vw;/*374px=116.875vw * 2*/ margin: 0 auto; margin-top: 20px; position: relative; 
+                  >img{width: 100%; height: 50%; float: left;
+                     &:hover{cursor: pointer;}
+                     &.margin_right{margin-bottom: 10px;}
+                  }
+               }// #infographic
+            }
+         }
+         &#work{position: absolute; top: 50px; right: 0;
+            >#mainWork{width: 100%; height: calc(100% - 250px); padding-top: 250px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold;
+               &:hover{background-color: #366161; transition: all 0.5s; color: #bed6d6; cursor: pointer;}
+            }// #mainWork - div
+            >section{width: 100%; height: calc(100% - 100px); padding-top: 100px; background-color: #bed6d6; display: none; overflow-y: auto;
+               >ul{width: 46.875vw;/*150px*/ height: auto; margin: 0 auto;
+                  >li{width: 46.875vw;/*150px*/ height: 46.875vw;/*150px*/ margin-top: 4.6875vw;/*15px*/ border-radius: 25px; cursor: pointer; background-color: #fff; background-repeat: no-repeat; background-position: center; background-size: contain;
+                     &.go_pf01{background-image: url(../img/viliv_.jpg);
+                        &:hover{background-image: url(../img/viliv_hover.jpg)}
+                     }
+                     &.go_pf02{background-image: url(../img/sevenEleven_.jpg);
+                        &:hover{background-image: url(../img/sevenEleven_hover.jpg);}
+                     }
+                     &.go_pf03{}
+                  }
+               }// ul
+            }// section
+            >article{width: 100%; height: calc(100% - 70px); padding-top: 70px; display: none; background-repeat: no-repeat; background-position: center; background-size: contain; 
+               >div{width: 81.25vw;/*260px*/ height: 100%; margin: 0 auto;overflow-y: auto;
+                  >button{width: 50px; height: 50px;background-color: #fff; border: 2px solid #555; border-radius: 20px; cursor: pointer; float: left; color: #333; font-weight: bold;}// button
+                  >h2{width: 62.5vw;/*200px*/ height: 50px; margin-left: 5px; background-color: #faa; line-height: 50px; font-size: 1.5rem; text-align: center; display: block; float: left;}// h2
+                  >a{width: calc(62.5vw + 55px);/*250px*/ height: 50px; margin-top: 5px; margin-left: 5px; background-color: #fff; border: 2px solid #555; border-radius: 20px; box-sizing: border-box; text-align: center; line-height: 50px; text-decoration: none; color: #333; font-weight: bold; float: left;}// a
+                  >.working{width: 100%; height: 40px; margin-top: 15px; float: left;
+                     >li{width: 30%; height: 100%; margin-right: 5%; float: left; text-align: center; background-color: #abc; line-height: 40px;
+                        &:hover{cursor: pointer; background-color: #faa; border-bottom: 2px solid #777; box-sizing: border-box;}
+                        &:last-child{margin-right: 0;}
+                        &.click_css{background-color: #faa; border-bottom: 2px solid #777; box-sizing: border-box;}
+                     }// li
+                  }// .working - ul
+                  >.working_view{width: 100%; height: calc(100% - 190px); margin-top: 10px; float: left; 
+                     >ul{width: 100%; height: 100%;
+                        >li{width: 0; height: 0; overflow-y: auto;
+                           &.working_size{width: 100%; height: 100%;}
+                           &.style{
+                              >div{float: left; background-color: #fff;  border-right: 1px solid #faa; border-left: 1px solid #faa;  border-bottom: 1px solid #faa; box-sizing: border-box;
+                                 >h3{width: 100%; height: 20px; display: block; text-align: center; line-height: 20px; background-color: #faa;}
+                                 >div{width: 100%; height: auto; margin-top: 1.953125vw;/*20px*/ text-align: center;}
+                                 &.style01{width: 50%; height: 90px;
+                                    >div{margin-top: 10px;}
+                                 }
+                                 &.style02{width: 50%; height: 90px;
+                                    >div{margin-top: 10px;}
+                                 }
+                                 &.style03{width: 100%;/*약260px*/ height: 56.40625vw;/*180.5px*/ 
+                                    >div{width: 100%; height: 100%; margin-top: 0;
+                                       >img{width: 100%; height: 100%;}
+                                    }
+                                 }
+                                 &.style04{width: 100%;/*약260px*/ height: 56.40625vw;/*180.5px*/
+                                    >div{width: 100%; height: 100%; margin-top: 0;
+                                       >img{width: 100%; height: 100%;}
+                                    }
+                                 }
+                                 &.style05{width: 50%; height: 110px;
+                                 }
+                                 &.style06{width: 50%; height: 110px;}
+                              }//div
+                           }//.style
+                           &.design{
+                              >.designBox{width: 81.25vw;/*260px*/ height: 70.8125vw;/*226.6px*/ float: left; background-color: #fff; position: relative; overflow: hidden;
+                                 >.indi_ul{width: auto; height: 28px; position: absolute; top: 5px; left: 5px;
+                                    >li{width: 42px; height: 100%; float: left; background-color: #fff; cursor: pointer;
+                                       &:first-child{width: 0; height: 0; overflow: hidden;}
+                                       >img{width: 100%; height: 100%;}
+                                    }// li
+                                 }// .indi_ul
+                                 >button{width: 10.9375vw;/*35px*/ height: 10.9375vw;/*35px*/ background-color: #159; position: absolute; cursor: pointer;
+                                    &.left_btn{top: calc(50% - 5.46875vw); left: 10px;}// /left_btn
+                                    &.right_btn{top: calc(50% - 5.46875vw); right: 10px;}// .right_btn
+                                 }// button
+                                 >.img_ul{width: 700%; height: 100%; margin-left: -100%;
+                                    >li{width: calc(100% / 7); height: 100%; float: left; background-color: #ffa;
+                                       &:nth-child(1){}
+                                       &:nth-child(2){background-color: #fcf;}
+                                    }// li
+                                 }// .img_ul
+                              }// designBox
+                           }// .design
+                           &.coding{
+                              >div{float: left; background-color: #fff;
+                                 >h3{width: 100%; height: 20px; text-align: center; line-height: 20px; background-color: #faa;
+                                    >span{font-size: 0.725rem;}
+                                 }
+                                 >div{width: 100%; height: calc(100% - 20px); overflow-y: scroll; word-wrap: break-word;}
+                                 &.html_part{width: 100%; height: 33.333333%; border-left: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
+                                 &.css_part{width: 100%; height: 33.333333%; border-right: 1px solid #faa; box-sizing: border-box;}
+                                 &.jquery_part{width: 100%; height: 33.333333%; border-right: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
+                              }// div
+                           }// .coding
+                        }// li
+                     }// ul
+                  }// .working_view
+               }//div
+               &#pf01{}
+               &#pf02{}
+               &#pf03{}
+            }// article
+         }// #work
+         &.articleMin{width: 10%;}
+         &.articleMax{width: 90%;}
+      }// article
+      >footer{width: 100%; height: 50px; background-image: url(../img/backgroundPattern_od.jpg); position: absolute; bottom: 0; left: 0; z-index: 2000; text-align: center; font-size: 0.875rem; line-height: 50px;}
+   }// #container
+}

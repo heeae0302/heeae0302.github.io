@@ -87,3 +87,80 @@ function liClickliView(clickLi, viewLi){
       view_li.eq(this_index).addClass('working_size').slideDown(500);
    });
 }; // 리스트 클릭하면 해당번째의 다른 리스트 보이기
+
+function indibtnBanner(box, indiUl, imgUl, btn_l, btn_r){
+   
+   var indiLi = indiUl.find('li'),
+       imgLi = imgUl.find('li'),
+       imgLi_length = imgLi.length;//////////요거 해결할 차례!!!!!!!!!!!!!!
+   
+   indiLi.first().addClass('indiClick');
+   
+   indiLi.last().clone().prependTo(indiUl);
+   imgLi.last().clone().prependTo(imgUl);
+   
+   indiLi.on('click', function(e){
+      e.preventDefault();
+      var $this = $(this),
+          indi_index = $this.index(),
+          img_w = imgUl.find('li').width(),
+          img_ani = indi_index*img_w;
+      $this.addClass('indiClick').siblings().removeClass('indiClick')
+      imgUl.stop().delay(100).animate({'margin-left':-img_ani}, 800);
+   });
+   
+   btn_l.on('click', function(){
+   var img_Ml = parseInt(imgUl.css('margin-left')),
+       imgLi_w = imgUl.find('li').width();
+      if(img_Ml >= -imgLi_w){
+         imgUl.stop().delay(100).animate({'margin-left':'+='+imgLi_w}, 700, function(){
+            imgUl.css({'margin-left':-imgLi_w*imgLi_length});
+         });
+         indiLi.last().addClass('indiClick').siblings().removeClass('indiClick');
+      }else{
+         imgUl.stop().delay(100).animate({'margin-left':'+='+imgLi_w}, 700);
+      };
+      var ulMarginCut = Math.abs(img_Ml) / imgLi_w;
+      indiLi.eq(ulMarginCut-2).addClass('indiClick').siblings().removeClass('indiClick');
+   });
+   
+   btn_r.on('click', function(){
+      var img_Ml = parseInt(imgUl.css('margin-left')),
+          imgLi_w = imgUl.find('li').width();
+      if(img_Ml <= -imgLi_w*imgLi_length){
+         imgUl.css({'margin-left':0}).stop().delay(100).animate({'margin-left':'-='+imgLi_w}, 700);
+         indiLi.first().addClass('indiClick').siblings().removeClass('indiClick');
+      }else{
+         imgUl.stop().delay(100).animate({'margin-left':'-='+imgLi_w}, 700);
+      };
+      var ulMarginCut = Math.abs(img_Ml) / imgLi_w;
+      indiLi.eq(ulMarginCut).addClass('indiClick').siblings().removeClass('indiClick');
+   });
+   
+};// indibtnBanner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
