@@ -31,7 +31,7 @@
             }
          }
          &#work{position: absolute; top: 50px; right: 0;
-            >#mainWork{width: 100%; height: calc(100% - 250px); padding-top: 250px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold;
+            >#mainWork{width: 100%; height: calc(100% - 200px); padding-top: 200px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold;
                &:hover{background-color: #366161; transition: all 0.5s; color: #bed6d6; cursor: pointer;}
             }// #mainWork - div
             >section{width: 100%; height: calc(100% - 50px); padding-top: 50px; background-color: #bed6d6; display: none; overflow-y: auto;
