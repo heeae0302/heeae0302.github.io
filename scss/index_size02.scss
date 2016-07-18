@@ -22,7 +22,7 @@
                      >.openchat_text{width: 100%; height: 20px; margin-top: 10px; text-align: center; display: block; line-height: 20px; text-decoration: none; color: #1f1f1f; font-size: 0.875rem;}
                   }
                }
-               >#infographic{width: 75vw;/*240px360*/ height: 212.5vw;/*340=106.25vw * 2*/ margin: 0 auto; margin-top: 20px; position: relative; 
+               >#infographic{width: 75vw;/*240px*/ height: 212.5vw;/*340=106.25vw * 2*/ margin: 0 auto; margin-top: 20px; position: relative; 
                   >img{width: 100%; height: 50%; float: left;
                      &:hover{cursor: pointer;}
                      &.margin_right{margin-bottom: 10px;}
@@ -34,7 +34,7 @@
             >#mainWork{width: 100%; height: calc(100% - 250px); padding-top: 250px; background-color: #bed6d6; transition: all 0.5s; color: #366161; text-align: center; font-size: 1.7rem; font-weight: bold;
                &:hover{background-color: #366161; transition: all 0.5s; color: #bed6d6; cursor: pointer;}
             }// #mainWork - div
-            >section{width: 100%; height: calc(100% - 100px); padding-top: 100px; background-color: #bed6d6; display: none; overflow-y: auto;
+            >section{width: 100%; height: calc(100% - 50px); padding-top: 50px; background-color: #bed6d6; display: none; overflow-y: auto;
                >ul{width: 46.875vw;/*150px*/ height: auto; margin: 0 auto;
                   >li{width: 46.875vw;/*150px*/ height: 46.875vw;/*150px*/ margin-top: 4.6875vw;/*15px*/ border-radius: 25px; cursor: pointer; background-color: #fff; background-repeat: no-repeat; background-position: center; background-size: contain;
                      &.go_pf01{background-image: url(../img/viliv_.jpg);
@@ -47,9 +47,9 @@
                   }
                }// ul
             }// section
-            >article{width: 100%; height: calc(100% - 70px); padding-top: 70px; display: none; background-repeat: no-repeat; background-position: center; background-size: contain; 
-               >div{width: 81.25vw;/*260px*/ height: 100%; margin: 0 auto;overflow-y: auto;
-                  >button{width: 50px; height: 50px;background-color: #fff; border: 2px solid #555; border-radius: 20px; cursor: pointer; float: left; color: #333; font-weight: bold;}// button
+            >article{width: 100%; height: calc(100% - 20px); padding-top: 20px; display: none; background-repeat: no-repeat; background-position: center; background-size: contain; overflow-y: auto;
+               >div{width: 100%;/*260px*/ height: 100%; margin: 0 auto; overflow-y: auto;
+                  >button{width: 50px; height: 50px; background-color: #fff; border: 2px solid #555; border-radius: 20px; cursor: pointer; float: left; color: #333; font-weight: bold;}// button
                   >h2{width: 62.5vw;/*200px*/ height: 50px; margin-left: 5px; background-color: #faa; line-height: 50px; font-size: 1.5rem; text-align: center; display: block; float: left;}// h2
                   >a{width: calc(62.5vw + 55px);/*250px*/ height: 50px; margin-top: 5px; margin-left: 5px; background-color: #fff; border: 2px solid #555; border-radius: 20px; box-sizing: border-box; text-align: center; line-height: 50px; text-decoration: none; color: #333; font-weight: bold; float: left;}// a
                   >.working{width: 100%; height: 40px; margin-top: 15px; float: left;
@@ -61,8 +61,8 @@
                   }// .working - ul
                   >.working_view{width: 100%; height: calc(100% - 190px); margin-top: 10px; float: left; 
                      >ul{width: 100%; height: 100%;
-                        >li{width: 0; height: 0; overflow-y: auto;
-                           &.working_size{width: 100%; height: 100%;}
+                        >li{width: 0; height: 0; /*overflow-y: auto;*/overflow: hidden;
+                           &.working_size{width: 100%; height: auto;}
                            &.style{
                               >div{float: left; background-color: #fff;  border-right: 1px solid #faa; border-left: 1px solid #faa;  border-bottom: 1px solid #faa; box-sizing: border-box;
                                  >h3{width: 100%; height: 20px; display: block; text-align: center; line-height: 20px; background-color: #faa;}
@@ -89,7 +89,7 @@
                               }//div
                            }//.style
                            &.design{
-                              >.designBox{width: 81.25vw;/*260px*/ height: 70.8125vw;/*226.6px*/ float: left; background-color: #fff; position: relative; overflow: hidden;
+                              >.designBox{width: 100%;/*260px*/ height: 87.1875vw;/*279px*/  float: left; background-color: #fff; position: relative; overflow: hidden;
                                  >.indi_ul{width: auto; height: 28px; position: absolute; top: 5px; left: 5px;
                                     >li{width: 42px; height: 100%; float: left; background-color: #fff; cursor: pointer;
                                        &:first-child{width: 0; height: 0; overflow: hidden;}
@@ -113,10 +113,10 @@
                                  >h3{width: 100%; height: 20px; text-align: center; line-height: 20px; background-color: #faa;
                                     >span{font-size: 0.725rem;}
                                  }
-                                 >div{width: 100%; height: calc(100% - 20px); overflow-y: scroll; word-wrap: break-word;}
-                                 &.html_part{width: 100%; height: 33.333333%; border-left: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
-                                 &.css_part{width: 100%; height: 33.333333%; border-right: 1px solid #faa; box-sizing: border-box;}
-                                 &.jquery_part{width: 100%; height: 33.333333%; border-right: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
+                                 >div{width: 100%; height: 200px; overflow-y: scroll; word-wrap: break-word;}
+                                 &.html_part{width: 100%; border-left: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
+                                 &.css_part{width: 100%; border-right: 1px solid #faa; box-sizing: border-box;}
+                                 &.jquery_part{width: 100%; border-right: 1px solid #faa; border-bottom: 1px solid #faa; box-sizing: border-box;}
                               }// div
                            }// .coding
                         }// li
