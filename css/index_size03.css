@@ -57,7 +57,8 @@
   #container > article#work > article > div > .working_view > ul > li.style > div.style04 > div > img { width: 100%; height: 100%; }
   #container > article#work > article > div > .working_view > ul > li.style > div.style05 { width: 28.320312vw; /*290px*/ height: 16.601562vw; /*170px*/ }
   #container > article#work > article > div > .working_view > ul > li.style > div.style06 { width: 28.320312vw; /*290px*/ height: 16.601562vw; /*170px*/ }
-  #container > article#work > article > div > .working_view > ul > li.design > .designBox { width: 76.171875vw; /*780px*/ height: 100%; float: left; position: relative; overflow: hidden; }
+  #container > article#work > article > div > .working_view > ul > li.design { height: auto; }
+  #container > article#work > article > div > .working_view > ul > li.design > .designBox { width: 76.171875vw; /*780px*/ height: auto; float: left; position: relative; overflow: hidden; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > .indi_ul { width: auto; height: 50px; position: absolute; top: 10px; left: 10px; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > .indi_ul > li { width: 75px; height: 100%; float: left; cursor: pointer; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > .indi_ul > li:first-child { width: 0; height: 0; overflow: hidden; }
@@ -65,9 +66,10 @@
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > button { width: 50px; height: 50px; background-color: #159; position: absolute; cursor: pointer; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > button.left_btn { top: calc(50% - 25px); left: 10px; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > button.right_btn { top: calc(50% - 25px); right: 10px; }
-  #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul { width: 700%; height: 100%; margin-left: -100%; }
-  #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul > li { width: calc(100% / 7); height: 100%; float: left; }
+  #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul { width: 700%; height: auto; margin-left: -100%; }
+  #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul > li { width: calc(100% / 7); height: auto; float: left; }
   #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul > li:nth-child(2) { background-color: #fcf; }
+  #container > article#work > article > div > .working_view > ul > li.design > .designBox > .img_ul > li > img { width: 100%; height: auto; }
   #container > article#work > article > div > .working_view > ul > li.coding > div { float: left; }
   #container > article#work > article > div > .working_view > ul > li.coding > div > h3 { width: 100%; height: 30px; text-align: center; line-height: 30px; background-color: #bed6d6; }
   #container > article#work > article > div > .working_view > ul > li.coding > div > h3 > span { font-size: 0.725rem; }
