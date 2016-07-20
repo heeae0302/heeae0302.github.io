@@ -6,7 +6,6 @@ a{color: #777;}
 h1,h2,h3,h4,h5,h6{font-weight: bold;}
 
 
-input:focus, button:focus, textarea:focus, select:focus a:focus{outline: 2px solid #0af;}
 input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="email"]:focus, textarea:focus{background-color:#fcf;}
 
 

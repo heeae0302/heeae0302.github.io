@@ -1,187 +1,43 @@
-@media screen and (min-width: 1800px) {
-  #container {
-    width: 100%;
-    height: 100vh;
-    position: relative; }
-    #container > header {
-      width: 100%;
-      height: 70px;
-      background-color: #fff;
-      position: fixed;
-      top: 0;
-      z-index: 2000; }
-      #container > header > h1 {
-        width: 150px;
-        height: 60px;
-        padding-top: 5px;
-        margin-left: calc(50% - 900px);
-        float: left; }
-        #container > header > h1 > a {
-          width: 100%;
-          height: 100%;
-          background-image: url(../img/logo.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain;
-          display: block; }
-      #container > header > nav {
-        width: 900px;
-        height: 100%;
-        margin-right: calc(50% - 900px);
-        float: right; }
-        #container > header > nav > #gnb {
-          width: 100%;
-          height: 100%; }
-          #container > header > nav > #gnb > li {
-            width: calc(100% / 4);
-            height: 100%;
-            border-left: 1px solid #777;
-            box-sizing: border-box;
-            float: left;
-            text-align: center; }
-            #container > header > nav > #gnb > li:last-child {
-              border-right: 1px solid #777; }
-            #container > header > nav > #gnb > li > a {
-              width: 100%;
-              height: 100%;
-              display: block;
-              color: #333333;
-              text-decoration: none;
-              font-size: 1.1rem;
-              font-weight: bold;
-              line-height: 70px; }
-              #container > header > nav > #gnb > li > a:hover {
-                background-color: rgba(100, 100, 100, 0.2); }
-              #container > header > nav > #gnb > li > a.menu_check {
-                background-color: rgba(100, 100, 100, 0.2); }
-    #container > #mapLine {
-      width: 20px;
-      height: 100vh;
-      position: absolute;
-      left: calc(50% - 850px);
-      border-right: 1px solid #777; }
-      #container > #mapLine > ul {
-        width: 40px;
-        height: 700px;
-        padding-top: 100px;
-        margin-top: 100px; }
-        #container > #mapLine > ul > li {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 100px;
-          background-color: #fff;
-          border: 2px solid #1f1f1f;
-          box-sizing: border-box;
-          border-radius: 25px;
-          text-align: center;
-          overflow: hidden;
-          transition: all 0.3s; }
-          #container > #mapLine > ul > li:hover {
-            width: 100px;
-            margin-left: -30px;
-            background-color: #1f1f1f;
-            border-radius: 24px;
-            text-align: center; }
-            #container > #mapLine > ul > li:hover > a {
-              width: 100%;
-              height: 100%;
-              display: block;
-              line-height: 40px;
-              text-decoration: none;
-              color: #fff; }
-          #container > #mapLine > ul > li.select_map {
-            width: 100px;
-            margin-left: -30px;
-            background-color: #1f1f1f;
-            border-radius: 24px;
-            text-align: center; }
-            #container > #mapLine > ul > li.select_map > a {
-              width: 100%;
-              height: 100%;
-              display: block;
-              line-height: 40px;
-              text-decoration: none;
-              color: #fff; }
-            #container > #mapLine > ul > li.select_map > span {
-              display: none; }
-          #container > #mapLine > ul > li > a {
-            display: none; }
-          #container > #mapLine > ul > li > span {
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            font-weight: bold; }
-    #container > section {
-      width: 1800px;
-      height: calc(100vh - 120px);
-      padding-top: 120px;
-      margin: 0 auto;
-      overflow-y: auto; }
-      #container > section > article {
-        width: 0;
-        height: 0;
-        overflow: hidden; }
-        #container > section > article.arti_size {
-          width: 1600px;
-          height: 700px;
-          margin-left: 140px;
-          transition: height 0.5s; }
-        #container > section > article > .product_menu {
-          width: 100%;
-          height: 50px; }
-          #container > section > article > .product_menu > li {
-            width: 180px;
-            height: 100%;
-            background-color: #ffffff;
-            border-left: 2px solid #777;
-            float: left; }
-            #container > section > article > .product_menu > li.btn_click {
-              background-color: #fafaad; }
-            #container > section > article > .product_menu > li:last-child {
-              border-right: 2px solid #777; }
-            #container > section > article > .product_menu > li > button {
-              width: 90%;
-              height: 100%;
-              margin-left: 5%;
-              cursor: pointer;
-              background-color: transparent; }
-        #container > section > article > .product_script {
-          width: 100%;
-          height: calc(100% - 60px);
-          margin-top: 10px;
-          background-color: #fafaad; }
-          #container > section > article > .product_script > li {
-            width: 0;
-            height: 0;
-            overflow: hidden; }
-            #container > section > article > .product_script > li.view_script {
-              width: 100%;
-              height: 100%;
-              background-color: thistle; }
-    #container > footer {
-      width: 100%;
-      height: 50px; }
-      #container > footer > #footUl {
-        width: 1000px;
-        height: 100%;
-        margin: 0 auto; }
-        #container > footer > #footUl > li {
-          width: 20%;
-          height: 20px;
-          margin-top: 15px;
-          border-right: 1px solid #777;
-          box-sizing: border-box;
-          text-align: center;
-          float: left; }
-          #container > footer > #footUl > li:last-child {
-            border-right: 0; }
-          #container > footer > #footUl > li > a {
-            width: 100%;
-            height: 100%;
-            display: block;
-            line-height: 20px;
-            text-decoration: none;
-            font-size: 0.95rem;
-            color: #333; } }
+@media screen and (min-width: 1800px) { #container { width: 100%; height: 100vh; position: relative; }
+  #container > header { width: 100%; height: 70px; background-color: #fff; position: fixed; top: 0; z-index: 2000; border-bottom: 1px solid #777; }
+  #container > header > h1 { width: 150px; height: 60px; padding-top: 5px; margin-left: calc(50% - 900px); float: left; }
+  #container > header > h1 > a { width: 100%; height: 100%; background-image: url(../img/logo.png); background-repeat: no-repeat; background-position: center; background-size: contain; display: block; }
+  #container > header > nav { width: 900px; height: 100%; margin-right: calc(50% - 900px); float: right; }
+  #container > header > nav > #gnb { width: 100%; height: 100%; }
+  #container > header > nav > #gnb > li { width: calc(100% / 4); height: 100%; border-left: 1px solid #777; box-sizing: border-box; float: left; text-align: center; }
+  #container > header > nav > #gnb > li:last-child { border-right: 1px solid #777; }
+  #container > header > nav > #gnb > li > a { width: 100%; height: 100%; display: block; color: #333333; text-decoration: none; font-size: 1.1rem; font-weight: bold; line-height: 70px; }
+  #container > header > nav > #gnb > li > a:hover { background-color: rgba(100, 100, 100, 0.2); }
+  #container > header > nav > #gnb > li > a.menu_check { background-color: rgba(100, 100, 100, 0.2); }
+  #container > #mapLine { width: 20px; height: 100vh; position: absolute; left: calc(50% - 850px); border-right: 1px solid #777; }
+  #container > #mapLine > ul { width: 40px; height: 700px; padding-top: 100px; margin-top: 100px; }
+  #container > #mapLine > ul > li { width: 100%; height: 40px; margin-bottom: 100px; background-color: #fff; border: 2px solid #1f1f1f; box-sizing: border-box; border-radius: 25px; text-align: center; overflow: hidden; transition: all 0.3s; }
+  #container > #mapLine > ul > li:hover { width: 100px; margin-left: -30px; background-color: #1f1f1f; border-radius: 24px; text-align: center; }
+  #container > #mapLine > ul > li:hover > a { width: 100%; height: 100%; display: block; line-height: 40px; text-decoration: none; color: #fff; }
+  #container > #mapLine > ul > li.select_map { width: 100px; margin-left: -30px; background-color: #1f1f1f; border-radius: 24px; text-align: center; }
+  #container > #mapLine > ul > li.select_map > a { width: 100%; height: 100%; display: block; line-height: 40px; text-decoration: none; color: #fff; }
+  #container > #mapLine > ul > li.select_map > span { display: none; }
+  #container > #mapLine > ul > li > a { display: none; }
+  #container > #mapLine > ul > li > span { width: 40px; height: 40px; line-height: 40px; font-weight: bold; }
+  #container > section { width: 1800px; height: calc(100vh - 120px); padding-top: 120px; margin: 0 auto; overflow-y: auto; }
+  #container > section > article { width: 0; height: 0; overflow: hidden; }
+  #container > section > article.arti_size { width: 1600px; height: 700px; margin-left: 140px; transition: height 0.5s; }
+  #container > section > article > .product_menu { width: 100%; height: 50px; }
+  #container > section > article > .product_menu > li { width: 180px; height: 100%; background-color: #aaa; border-top: 1px solid #777; border-left: 1px solid #777; float: left; }
+  #container > section > article > .product_menu > li.btn_click { background-color: #ffffff; }
+  #container > section > article > .product_menu > li.btn_click > button { color: #1f1f1f; border-bottom: 1px dotted #777; }
+  #container > section > article > .product_menu > li:hover { background-color: #ffffff; }
+  #container > section > article > .product_menu > li:hover > button { color: #1f1f1f; border-bottom: 1px dotted #777; }
+  #container > section > article > .product_menu > li:last-child { border-right: 1px solid #777; }
+  #container > section > article > .product_menu > li > button { width: 90%; height: 100%; margin-left: 5%; cursor: pointer; background-color: transparent; color: #ffffff; }
+  #container > section > article > .product_script { width: 100%; height: 630px; /*calc(100% - 60px)*/ border: 1px solid #777; box-sizing: border-box; }
+  #container > section > article > .product_script > li { width: 0; height: 0; overflow: hidden; }
+  #container > section > article > .product_script > li.view_script { width: 100%; height: 100%; }
+  #container > section > article > .product_script > li > img { width: 100%; height: 100%; }
+  #container > footer { width: 100%; height: 50px; }
+  #container > footer > #footUl { width: 1000px; height: 100%; margin: 0 auto; }
+  #container > footer > #footUl > li { width: 20%; height: 20px; margin-top: 15px; border-right: 1px solid #777; box-sizing: border-box; text-align: center; float: left; }
+  #container > footer > #footUl > li:last-child { border-right: 0; }
+  #container > footer > #footUl > li > a { width: 100%; height: 100%; display: block; line-height: 20px; text-decoration: none; font-size: 0.95rem; color: #333; } }
 
 /*# sourceMappingURL=product_size05.css.map */

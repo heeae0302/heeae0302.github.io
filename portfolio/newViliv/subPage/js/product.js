@@ -5,11 +5,15 @@ function productJS(){
    var map_li = $('#mapLine>ul>li'),
        arti = $('section>article');
    
-   map_li.on('click', function(){
+   map_li.on('click', function(e){
+      e.preventDefault();
       var $this = $(this),
-          li_index = $('#mapLine>ul>li').index(this);
+          li_index = $('#mapLine>ul>li').index(this),
+          arti_this = arti.eq(li_index);
       $this.addClass('select_map').siblings().removeClass('select_map');
-      arti.eq(li_index).addClass('arti_size').siblings().removeClass('arti_size');
+      arti_this.addClass('arti_size').siblings().removeClass('arti_size');
+      arti_this.find('.product_menu>li').eq(0).addClass('btn_click').siblings().removeClass('btn_click');
+      arti_this.find('.product_script>li').eq(0).addClass('view_script').siblings().removeClass('view_script');
    });
    
    var pro_btn = $('.product_menu>li>button');
